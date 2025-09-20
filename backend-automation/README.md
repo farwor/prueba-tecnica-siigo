@@ -20,24 +20,28 @@ La API utilizada como ejemplo es [ReqRes](https://reqres.in), la cual permite pr
 ## 📂 Estructura del proyecto
 ```
 
-├── src/
-│ ├── main/
-│ │ ├── resources/
-│ │ └── json/ # Archivos JSON para request body
-│ └── test/
-│ └── java/co/com/siigo/
-│ ├── delete/ # Feature de eliminación
-│ │ └── eliminar_usuario.feature
-│ ├── get/ # Feature de consulta
-│ │ └── lista_usuarios.feature
-│ ├── post/ # Feature de creación
-│ │ └── crear_usuario.feature
-│ └── put/ # Feature de actualización
-│ └── actualizar_usuario.feature
-│ └── EjecutarTestRunner.java # Runner general de pruebas
-├── pom.xml # Configuración Maven
-├── karate-config.js # Configuración global de Karate
-└── README.md # Este archivo
+ src
+   └── main
+       └── resources
+           └── json/                               # Archivos JSON para request body
+   └── test
+       └── java
+           └── co.com.siigo
+               └── delete/                         # Feature de eliminación
+                   └── eliminar_usuario.feature
+               └── get/                            # Feature de consulta
+                   └── lista_usuarios.feature
+               └── post/                           # Feature de creación
+                   └── crear_usuario.feature
+               └── put/                            # Feature de actualización
+                   └── actualizar_usuario.feature
+           └── EjecutarTestRunner.java             # Runner general de pruebas
+       └── karate-config.js                        # Configuración global de Karate
+       └── logback-test.xml                        # Configurar el logging durante la ejecución de pruebas
+├── pom.xml                                        # Configuración Maven
+└── README.md    
+
+                                 
 ```
 
 ---
